@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  /* color */
+  --body-color: #fff;
+  --main-color: #0094d9;
+
+  /* font */
+  --heading-font: "Montserrat", sans-serif;
+  --main-font: "Montserrat", sans-serif;
+  --logo-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+.container {
+  max-width: 1500px;
+}
+
+.header {
+  width: 100%;
+  height: 269px;
+  background: var(--main-color);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-top: 24px;
+}
+
+.header .header-wrapper {
+  margin: auto;
+}
+
+.header .header-wrapper .tittle-section {
+  text-align: center;
+}
+
+.header .header-wrapper .tittle-section .headline-header {
+  margin-bottom: 34px;
+}
+
+.header .header-wrapper .tittle-section .subheadline-header h1 {
+  font-family: var(--heading-font);
+  color: #fff;
+  font-weight: 700;
+}
+
+.body .body-wrapper {
+  padding: 49px 76px;
+  margin: auto;
+}
+
+.body .body-wrapper .body-content p {
+  font-size: 15px;
+  margin: 24px 0;
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+
+.body .body-content .btn-wrapper {
+  text-align: center;
+}
+
+.body .body-wrapper .body-content .btn-activate {
+  padding: 10px 15px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  /* margin-top: 50px; */
+  background-color: #1378ff;
+}
+
+.footer {
+  width: 100%;
+  height: 194px;
+  position: absolute;
+  bottom: 0;
+  background: var(--main-color);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-top: 53px;
+}
+
+.footer .footer-wrapper {
+  margin: auto;
+}
+
+.footer .footer-wrapper .tittle-section {
+  text-align: center;
+}
+
+.footer .footer-wrapper .tittle-section .headline-footer h1 {
+  font-family: var(--heading-font);
+  color: #040000;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer .footer-wrapper .tittle-section .subheadline-footer p {
+  color: #fff;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 911px) {
+  .footer {
+    width: 100%;
+    height: 194px;
+    /* position: absolute; */
+    /* bottom: 0;/ */
+    background: var(--main-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 53px;
+  }
+}
